@@ -362,3 +362,14 @@ hashmap.c:93:8: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 f402fac
+Sat Apr  9 15:29:22 UTC 2022: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:98:32: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+                   map->current = map->buckets[index];
+                                ^
+cc1: all warnings being treated as errors
+Compilation failed
+79e35b9

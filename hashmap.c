@@ -96,12 +96,13 @@ Pair * searchMap(HashMap * map,  char * key) {
         {
                 if (is_equal(map->buckets[index]->key, key) == 1) {
                   map->current = map->buckets[index];
+                  return map->buckets[index];
                 
                 }
                 index = (index +1) % map->capacity;
         }
   
-    return;
+    return NULL;
 }
 
 Pair * firstMap(HashMap * map) {
