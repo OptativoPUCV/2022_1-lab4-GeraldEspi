@@ -4,3 +4,20 @@ Sat Apr  9 02:28:49 UTC 2022:
  tests:  4|5
 total_score: 20/70
 d915c6c
+Sat Apr  9 02:29:18 UTC 2022: 
+ hashmap.c | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:72:34: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+     for (long i = 0; i < capacity, i++)
+                                  ^
+hashmap.c:72:39: error: expected ‘;’ before ‘)’ token
+     for (long i = 0; i < capacity, i++)
+                                       ^
+hashmap.c:81:15: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+     return map->buckets;
+            ~~~^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bb16c40
