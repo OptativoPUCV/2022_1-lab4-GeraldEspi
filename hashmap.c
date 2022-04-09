@@ -120,7 +120,7 @@ Pair * firstMap(HashMap * map) {
 }
 
 Pair * nextMap(HashMap * map) {
-  
+    map->current++;
     for(long i = map->current; i < map->capacity; i++)
          {
           if(map->buckets[i] != NULL && map->buckets[i]->key != NULL)
