@@ -175,3 +175,14 @@ hashmap.c:73:10: error: unused variable ‘buckets’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 27485e0
+Sat Apr  9 02:44:12 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:73:14: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   Pair ** map->buckets = (Pair *) malloc (capacity * sizeof(Pair));
+              ^~
+hashmap.c:73:14: error: expected expression before ‘->’ token
+Compilation failed
+78dca3b
