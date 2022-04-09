@@ -120,8 +120,6 @@ Pair * firstMap(HashMap * map) {
 }
 
 Pair * nextMap(HashMap * map) {
-    
-    Pair * nextMap(HashMap * map) {
     map->current++;
     long o = map->current;
     for(long i = o; i < map->capacity; i++)
@@ -132,4 +130,5 @@ Pair * nextMap(HashMap * map) {
             return map->buckets[map->current];
           }
          }
-}
+
+  }
