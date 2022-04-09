@@ -91,9 +91,17 @@ long index = hash(key, map->capacity);
 }
 
 Pair * searchMap(HashMap * map,  char * key) {   
-
-
-    return NULL;
+    long index = hash(key, map->capacity);
+    while(map->buckets[index] != NULL && map->buckets[index]->key != NULL)    
+        {
+                if (is_equal(map->buckets[index]->key, key) == 1) {
+                  map->current = map->buckets[index];
+                
+                }
+                index = (index +1) % map->capacity;
+        }
+  
+    return;
 }
 
 Pair * firstMap(HashMap * map) {

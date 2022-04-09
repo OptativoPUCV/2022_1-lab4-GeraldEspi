@@ -345,3 +345,20 @@ Sat Apr  9 03:28:41 UTC 2022:
  tests:  8|3
 total_score: 40/70
 fe1e789
+Sat Apr  9 15:27:01 UTC 2022: 
+ hashmap.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:98:32: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+                   map->current = map->buckets[index];
+                                ^
+hashmap.c:104:5: error: ‘return’ with no value, in function returning non-void [-Werror]
+     return;
+     ^~~~~~
+hashmap.c:93:8: note: declared here
+ Pair * searchMap(HashMap * map,  char * key) {
+        ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f402fac
