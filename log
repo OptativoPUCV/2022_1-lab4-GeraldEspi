@@ -31,3 +31,22 @@ hashmap.c:81:51: error: '*old_buckets' is a pointer; did you mean to use '->'?
                                                    ->
 Compilation failed
 d759bd1
+sá.,  9 de abr. de 2022 14:48:03: 
+ hashmap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:79:20: error: 'i' undeclared (first use in this function)
+     if(old_buckets[i] != NULL && old_buckets[i]->key != NULL)
+                    ^
+hashmap.c:79:20: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:81:33: error: '*old_buckets' is a pointer; did you mean to use '->'?
+       insertMap(map, old_buckets->key, old_buckets->value);
+                                 ^~
+                                 ->
+hashmap.c:81:51: error: '*old_buckets' is a pointer; did you mean to use '->'?
+       insertMap(map, old_buckets->key, old_buckets->value);
+                                                   ^~
+                                                   ->
+Compilation failed
+8417c7a
