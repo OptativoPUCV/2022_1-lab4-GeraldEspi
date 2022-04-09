@@ -78,7 +78,7 @@ HashMap * createMap(long capacity) {
     
 
 
-    return map->buckets;
+    return map;
 
 }
 
