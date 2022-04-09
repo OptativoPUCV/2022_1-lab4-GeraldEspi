@@ -186,3 +186,14 @@ hashmap.c:73:14: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__at
 hashmap.c:73:14: error: expected expression before ‘->’ token
 Compilation failed
 78dca3b
+Sat Apr  9 02:51:30 UTC 2022: 
+ hashmap.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:73:14: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   Pair ** map->buckets = (Pair *) malloc (capacity * sizeof(Pair));
+              ^~
+hashmap.c:73:14: error: expected expression before ‘->’ token
+Compilation failed
+9cb5f3e
