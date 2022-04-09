@@ -117,7 +117,7 @@ Pair * firstMap(HashMap * map) {
           }
          }
 
-    return;
+    return NULL;
 }
 
 Pair * nextMap(HashMap * map) {

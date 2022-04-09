@@ -446,3 +446,8 @@ hashmap.c:108:8: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 d08b48f
+Sat Apr  9 17:03:33 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+0187b77
