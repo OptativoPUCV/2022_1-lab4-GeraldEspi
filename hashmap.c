@@ -84,7 +84,7 @@ long index = hash(key, map->capacity);
         while(map->buckets[index] != NULL && map->buckets[index]->key != NULL)    
         {
                 if (is_equal(map->buckets[index]->key, key) == 1) {
-                  map->buckets[index]->key = NULL; size --; return;
+                  map->buckets[index]->key = NULL; map->size --; return;
                 }
                 index = (index +1) % map->capacity;
         }
