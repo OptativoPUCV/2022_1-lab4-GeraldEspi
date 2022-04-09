@@ -62,3 +62,17 @@ sá.,  9 de abr. de 2022 15:24:27:
  tests:  15|2
 total_score: 50/70
 60cca42
+sá.,  9 de abr. de 2022 16:12:56: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'createMap':
+hashmap.c:86:28: error: too many arguments to function 'malloc'
+   map->buckets = (Pair **) malloc (capacity, sizeof(Pair*));
+                            ^~~~~~
+In file included from test.c:2:0:
+c:\mingw\include\stdlib.h:485:40: note: declared here
+ _CRTIMP __cdecl __MINGW_NOTHROW  void *malloc (size_t) __MINGW_ATTRIB_MALLOC;
+                                        ^~~~~~
+Compilation failed
+7428855
