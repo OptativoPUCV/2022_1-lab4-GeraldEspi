@@ -9,3 +9,25 @@ vi.,  8 de abr. de 2022 22:24:14:
  1 file changed, 6 insertions(+), 1 deletion(-)
  tests:  0|0
 b0dd4ff
+sá.,  9 de abr. de 2022 14:46:24: 
+ hashmap.c | 66 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-----
+ 1 file changed, 61 insertions(+), 5 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:65:45: error: 'capacity' undeclared (first use in this function)
+     Pair ** old_buckets = (Pair **) malloc (capacity * sizeof(Pair*)); ;
+                                             ^~~~~~~~
+hashmap.c:65:45: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:66:10: error: 'i' undeclared (first use in this function)
+     for (i = 0; i < map->capacity; i++)
+          ^
+hashmap.c:81:33: error: '*old_buckets' is a pointer; did you mean to use '->'?
+       insertMap(map, old_buckets->key, old_buckets->value);
+                                 ^~
+                                 ->
+hashmap.c:81:51: error: '*old_buckets' is a pointer; did you mean to use '->'?
+       insertMap(map, old_buckets->key, old_buckets->value);
+                                                   ^~
+                                                   ->
+Compilation failed
+d759bd1
