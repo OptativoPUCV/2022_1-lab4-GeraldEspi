@@ -738,3 +738,18 @@ hashmap.c:79:51: error: ‘*old_buckets’ is a pointer; did you mean to use ‘
                                                    ->
 Compilation failed
 b01a6c7
+Sat Apr  9 18:53:46 UTC 2022: 
+ hashmap.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:78:37: error: ‘*old_buckets’ is a pointer; did you mean to use ‘->’?
+           insertMap(map, old_buckets->key, old_buckets->value);
+                                     ^~
+                                     ->
+hashmap.c:78:55: error: ‘*old_buckets’ is a pointer; did you mean to use ‘->’?
+           insertMap(map, old_buckets->key, old_buckets->value);
+                                                       ^~
+                                                       ->
+Compilation failed
+e7ce429
