@@ -379,3 +379,14 @@ Sat Apr  9 15:31:01 UTC 2022:
  tests:  11|2
 total_score: 50/70
 efd6888
+Sat Apr  9 15:46:14 UTC 2022: 
+ hashmap.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:116:35: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+             return map->buckets[i]->key;
+                    ~~~~~~~~~~~~~~~^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1a813e9
