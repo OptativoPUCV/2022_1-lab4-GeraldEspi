@@ -37,3 +37,13 @@ Sat Apr  9 02:29:49 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 cac2b9b
+Sat Apr  9 02:30:16 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:72:25: error: expected expression before ‘<’ token
+     for (long i = 0; i =< capacity; i++)
+                         ^
+Compilation failed
+49a8d4d
