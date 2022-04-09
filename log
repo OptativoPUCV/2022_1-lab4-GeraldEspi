@@ -260,3 +260,17 @@ Sat Apr  9 03:07:08 UTC 2022:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 eaec6d0
+Sat Apr  9 03:10:31 UTC 2022: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:86:47: error: invalid type argument of ‘->’ (have ‘long int’)
+       int comparador = is_equal(map->buckets[i->key], key);
+                                               ^~
+hashmap.c:87:10: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+       if(comparador = 0)
+          ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f609772

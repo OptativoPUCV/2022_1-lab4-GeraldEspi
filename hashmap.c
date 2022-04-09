@@ -83,7 +83,8 @@ void eraseMap(HashMap * map,  char * key) {
 
   for (long i = 0; i < map->capacity-1; i++)
     {
-      if(map->buckets[i]->key == key)
+      int comparador = is_equal(map->buckets[i->key], key);
+      if(comparador = 0)
       {
         map->buckets[i]->value = NULL;
         return;
