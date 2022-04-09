@@ -50,3 +50,9 @@ hashmap.c:81:51: error: '*old_buckets' is a pointer; did you mean to use '->'?
                                                    ->
 Compilation failed
 8417c7a
+sá.,  9 de abr. de 2022 15:15:37: 
+ hashmap.c | 12 ++----------
+ 1 file changed, 2 insertions(+), 10 deletions(-)
+ tests:  15|2
+total_score: 50/70
+8e9ce2e

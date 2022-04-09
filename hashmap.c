@@ -73,21 +73,13 @@ void enlarge(HashMap * map) {
 
       for (int i = 0; i < (map->capacity/2); i++)
       {
-        map->buckets[i] = old_buckets[i];
-      }
-  
-    if(old_buckets[i] != NULL && old_buckets[i]->key != NULL)
-    {
-      insertMap(map, old_buckets->key, old_buckets->value);
-    }
-    
-    
-
-    
+          if(old_buckets[i] != NULL && old_buckets[i]->key != NULL)
+           {
+           insertMap(map, old_buckets[i]->key, old_buckets[i]->value);
+           }
+     }
 
 }
-
-
 HashMap * createMap(long capacity) 
 {
   HashMap *map = (HashMap * ) malloc (sizeof(HashMap));
