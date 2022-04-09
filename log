@@ -225,3 +225,18 @@ Sat Apr  9 02:55:38 UTC 2022:
  tests:  5|4
 total_score: 30/70
 0b32bef
+Sat Apr  9 03:03:32 UTC 2022: 
+ hashmap.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:86:22: error: ‘*map->buckets’ is a pointer; did you mean to use ‘->’?
+       if(map->buckets->key == key)
+                      ^~
+                      ->
+hashmap.c:88:21: error: ‘*map->buckets’ is a pointer; did you mean to use ‘->’?
+         map->buckets->value = NULL;
+                     ^~
+                     ->
+Compilation failed
+ff77d0d
