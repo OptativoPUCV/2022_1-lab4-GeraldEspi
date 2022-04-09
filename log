@@ -240,3 +240,18 @@ hashmap.c:88:21: error: ‘*map->buckets’ is a pointer; did you mean to use �
                      ->
 Compilation failed
 ff77d0d
+Sat Apr  9 03:06:00 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:86:22: error: ‘*map->buckets’ is a pointer; did you mean to use ‘->’?
+       if(map->buckets->key == key)
+                      ^~
+                      ->
+hashmap.c:88:21: error: ‘*map->buckets’ is a pointer; did you mean to use ‘->’?
+         map->buckets->value = NULL;
+                     ^~
+                     ->
+Compilation failed
+4e33c1c
