@@ -723,3 +723,18 @@ test.c:100:6: error: ‘hash_test1’ defined but not used [-Werror=unused-funct
 cc1: all warnings being treated as errors
 Compilation failed
 7b8fa4b
+Sat Apr  9 18:50:00 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:79:33: error: ‘*old_buckets’ is a pointer; did you mean to use ‘->’?
+       insertMap(map, old_buckets->key, old_buckets->value);
+                                 ^~
+                                 ->
+hashmap.c:79:51: error: ‘*old_buckets’ is a pointer; did you mean to use ‘->’?
+       insertMap(map, old_buckets->key, old_buckets->value);
+                                                   ^~
+                                                   ->
+Compilation failed
+b01a6c7
