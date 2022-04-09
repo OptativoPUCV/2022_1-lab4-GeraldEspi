@@ -161,3 +161,17 @@ hashmap.c:73:10: error: unused variable ‘buckets’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 2ff75d6
+Sat Apr  9 02:43:38 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:73:20: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   Pair **buckets = (Pair *) malloc (capacity * sizeof(Pair));
+                    ^
+hashmap.c:73:10: error: unused variable ‘buckets’ [-Werror=unused-variable]
+   Pair **buckets = (Pair *) malloc (capacity * sizeof(Pair));
+          ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+27485e0
