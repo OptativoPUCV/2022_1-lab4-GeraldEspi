@@ -62,21 +62,13 @@ void insertMap(HashMap * map, char * key, void * value) {
 
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
-<<<<<<< HEAD
     Pair ** old_buckets = (Pair **) calloc (map->capacity, sizeof(Pair*)); ;
-=======
-    Pair ** old_buckets = (Pair **) malloc (map->capacity * sizeof(Pair*)); ;
->>>>>>> d7faf5524affe4e485428fe79549135baf3ab385
     for (int i = 0; i < map->capacity; i++)
       {
         old_buckets[i] = map->buckets[i];
       }
     map->capacity *= 2;
-<<<<<<< HEAD
     map->buckets = (Pair **) calloc (map->capacity, sizeof(Pair*));
-=======
-    map->buckets = (Pair **) malloc (map->capacity * sizeof(Pair*));
->>>>>>> d7faf5524affe4e485428fe79549135baf3ab385
     map->size = 0;
 
       for (int i = 0; i < (map->capacity/2); i++)
@@ -91,11 +83,7 @@ void enlarge(HashMap * map) {
 HashMap * createMap(long capacity) 
 {
   HashMap *map = (HashMap * ) malloc (sizeof(HashMap));
-<<<<<<< HEAD
   map->buckets = (Pair **) calloc (capacity, sizeof(Pair*));
-=======
-  map->buckets = (Pair **) malloc (capacity * sizeof(Pair*));
->>>>>>> d7faf5524affe4e485428fe79549135baf3ab385
     map->size = 0;
     map->capacity = capacity;
     map->current = -1;
