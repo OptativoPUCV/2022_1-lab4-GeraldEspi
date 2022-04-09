@@ -219,3 +219,9 @@ hashmap.c:73:13: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__at
 hashmap.c:73:13: error: expected expression before ‘->’ token
 Compilation failed
 5e60e32
+Sat Apr  9 02:55:38 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|4
+total_score: 30/70
+0b32bef
