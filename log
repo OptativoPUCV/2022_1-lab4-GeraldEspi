@@ -4,3 +4,8 @@ ju.,  7 de abr. de 2022 11:52:18:
  tests:  4|5
 total_score: 20/70
 d915c6c
+vi.,  8 de abr. de 2022 22:24:14: 
+ hashmap.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+ tests:  0|0
+b0dd4ff
