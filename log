@@ -57,3 +57,17 @@ Sat Apr  9 02:31:48 UTC 2022:
  1 file changed, 1 insertion(+), 4 deletions(-)
  tests:  0|0
 948c300
+Sat Apr  9 02:32:06 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:78:5: error: ‘return’ with no value, in function returning non-void [-Werror]
+     return;
+     ^~~~~~
+hashmap.c:70:11: note: declared here
+ HashMap * createMap(long capacity) {
+           ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9702515
