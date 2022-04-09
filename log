@@ -390,3 +390,8 @@ hashmap.c:116:35: error: return from incompatible pointer type [-Werror=incompat
 cc1: all warnings being treated as errors
 Compilation failed
 1a813e9
+Sat Apr  9 15:47:04 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+e679790
