@@ -255,3 +255,8 @@ hashmap.c:88:21: error: ‘*map->buckets’ is a pointer; did you mean to use �
                      ->
 Compilation failed
 4e33c1c
+Sat Apr  9 03:07:08 UTC 2022: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|0
+eaec6d0
